@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/my.css"/>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>	
+	<script type="text/javascript">
+(function (doc, win) {
+    	var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+             };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);			
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="header">
+		<div class="tubiao">
+			<i class="iconfont icon-zuojian1"> </i>
+		</div>
+		<div class="">
+			个人中心
+		</div>
+		
+	</div>
+	<!--
+    	作者：offline
+    	时间：2019-06-14
+    	描述：登录界面
+    -->
+    <div class="load-box" id="">
+    	
+    	<div class="load">
+    		<div class="">
+    		<p class="p1">Hi,欢迎来到花礼网</p>
+    		<p class="p2">登录/注册</p>
+    		</div>
+    	</div>
+    	<!--订单-->
+    <div class="order">
+    	<div class="myorder">
+    		<div class="">
+    			我的订单
+    		</div>
+    		<div class="">
+    			<span id="">
+    			全部订单
+    			</span>
+    			<i class="iconfont icon-arrow-right2"></i>
+    		</div>
+    		
+    	</div>
+    	
+    	
+    	<div class="order-list">
+    		<div class="">
+    			<img src="img/待付款.png"/>
+    			<p>待付款</p>
+    		</div>
+    		<div class="">
+    			<img src="img/今日配送.png"/>
+    			<p>今日配送</p>
+    		</div>
+    		<div class="">
+    			<img src="img/待评价.png"/>
+    			<p>待评价</p>
+    		</div>
+    	</div>
+    </div>
+    
+    <div class="linkbox">
+    	<div class="div1">
+    		<i class="iconfont icon-youhuiquan8"></i>
+    		<p>优惠券</p>
+    		
+    	</div>
+    	<div class="div1">
+    		<i class="iconfont icon-yue7"></i>
+    		<p>权益卡</p>
+    	</div>
+    	<div class="div1">
+    		<i class="iconfont icon-yue-"></i>
+    		<p>余额</p>
+    	</div>
+    	<div class="div1">
+    		<i class="iconfont icon-uEA-ste-service-"></i>
+    		<p>会员积分</p>
+    	</div>
+    	<div class="">
+    		<i class="iconfont icon-dizhi3"></i>
+    		<p>收货地址</p>
+    	</div>
+    	<div class="">
+    		<i class="iconfont icon-shijiantixing"></i>
+    		<p>生日纪念提醒</p>
+    	</div>
+    	<div class="">
+    		<i class="iconfont icon-shoucang1"></i>
+    		<p>我的收藏</p>
+    	</div>
+    	
+    	
+    	
+    </div>
+    <div class="linkbox2">
+    	<div class="">
+    		<i class="iconfont icon-kefu6"></i>
+    		<p>联系客服</p>
+    		
+    	</div>
+    	<div class="">
+    		<i class="iconfont icon-bangzhuzhongxin4"></i>
+    		<p>帮助中心</p>
+    	</div>
+    	<div class="">
+    		<i class="iconfont icon-guanyu9"></i>
+    		<p>关于花礼</p>
+    	</div>
+    	<div class="">
+    		<i class="iconfont icon-shezhi7"></i>
+    		<p>设置</p>
+    	</div>
+    </div>
+    <!--底部跳转-->
+   	<div class="bottom-leader">
+		<div >
+			<a href="index.html" class="lj2">
+			<i class="iconfont icon-shouye3"></i>
+			<p>首页</p>
+		    </a>
+		</div>
+		<div >
+			<a href="classify.html" class="lj2">
+			<i class="iconfont icon-fenleisousuo3"></i>
+			<p>分类</p>
+		    </a>
+		</div>
+		<div class="">
+			<a href="shopping.html" class="lj2">
+			<i class="iconfont icon-gouwuchekong2"></i>
+			<p>购物车</p>
+		    </a>
+		</div>
+		<div class="">
+			<a href="my.html" class="lj1">
+			<i class="iconfont icon-tiezi"></i>
+			<p>我的</p>
+		    </a>
+		</div>		
+		
+	</div> 
+    
+    
+    
+    </div>	
+	</body>
+</html>

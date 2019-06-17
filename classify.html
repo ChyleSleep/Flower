@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/classify.css"/>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>	
+	<script type="text/javascript">
+(function (doc, win) {
+    	var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+             };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);			
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-left">
+				<i class="iconfont icon-zuojian1"></i>
+			</div>
+			<div class="search">
+				<div class="icon-search">
+					<i class="iconfont icon-searchlist"></i>
+				</div>
+				<form action="" method="post">
+					
+					<input type="search" value="" placeholder="请输入关键词"/>
+				</form>
+				
+			</div>
+			
+		</div>
+	<div class="classify">
+		
+	
+		<div class="aside">
+			<div class=""><p><span id="">
+				
+			热门推荐</span></p></div>
+			<div class=""><p>鲜花</p></div>
+			<div class=""><p>永生花</p></div>
+			<div class=""><p>蛋糕</p></div>
+			<div class=""><p>巧克力</p></div>
+			<div class=""><p>特色礼品</p></div>
+			<div class=""><p>礼篮</p></div>
+			<div class=""><p>绿植花卉</p></div>	
+		</div>
+		<div class="aside-right">
+			<img src="img/19_fatherday_m (1).png"/>
+			<div class="hot-right">
+				<div class=""><img src="img/p-1.jpg"/><p>鲜花</p>   </div>
+				<div class=""><img src="img/p-2.jpg"/><p>蛋糕</p>	</div>
+				<div class=""><img src="img/p-3.jpg"/><p>永生花</p>	</div>
+				<div class=""><img src="img/p-4.jpg"/><p>特色礼品</p>	</div>
+				<div class=""><img src="img/p-5.jpg"/><p>设计师款</p>	</div>
+				<div class=""><img src="img/p-6.jpg"/><p>商务鲜花</p>	</div>
+				<div class=""><img src="img/p-7.jpg"/><p>巧克力</p>	</div>
+				<div class=""><img src="img/p-8.jpg"/><p>礼篮</p>	</div>
+				<div class=""><img src="img/p-9.jpg"/><p>绿植花卉</p>	</div>
+				<div class=""><img src="img/p-10.jpg"/><p>企业团购</p>	</div>	
+			</div>
+			
+		</div>
+		
+		</div>
+		
+		   	<div class="bottom-leader">
+		<div >
+			<a href="index.html" class="lj2">
+			<i class="iconfont icon-shouye3"></i>
+			<p>首页</p>
+		    </a>
+		</div>
+		<div >
+			<a href="classify.html" class="lj1">
+			<i class="iconfont icon-fenleisousuo3"></i>
+			<p>分类</p>
+		    </a>
+		</div>
+		<div class="">
+			<a href="shopping.html" class="lj2">
+			<i class="iconfont icon-gouwuchekong2"></i>
+			<p>购物车</p>
+		    </a>
+		</div>
+		<div class="">
+			<a href="my.html" class="lj2">
+			<i class="iconfont icon-tiezi"></i>
+			<p>我的</p>
+		    </a>
+		</div>		
+		
+	</div> 
+		
+	</body>
+</html>

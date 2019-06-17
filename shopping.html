@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/shopping.css"/>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>	
+	<script type="text/javascript">
+(function (doc, win) {
+    	var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+             };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);			
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="header">
+			<i class="iconfont icon-right2"></i>
+			<p>购物车</p>
+		</div>
+		
+		<div class="gwc">
+			<div class="picture">
+				<img src="img/gwc.png"/>
+				<p>这里什么都没有呀...</p>	
+			</div>
+			
+			<div class="guess">
+				<p>猜你喜欢</p>
+				<div class="guess-list">
+					<div class="">
+						<img src="img/sh1.jpg"/>
+						<div class="title">一往情深 <span>·</span>精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎</div>
+						<div class="price">
+							<span id="">&yen;</span>239
+						</div>
+					</div>
+					<div class="">
+						<img src="img/sh2.jpg"/>
+						<div class="title">甜美公主 <span>·</span>白玫瑰22枝，粉佳人粉玫瑰14枝，粉色桔梗5枝</div>
+						<div class="price">
+							<span id="">&yen;</span>369
+						</div>
+					</div>
+					<div class="">
+						<img src="img/sh3.jpg"/>
+						<div class="">一心一意 <span>·</span>玫瑰11枝，粉色勿忘我0.3扎</div>
+						<div class="price">
+							<span id="">&yen;</span>139
+						</div>
+					</div>
+					<div class="">
+						<img src="img/sh4.jpg"/>
+						<div class="title">不变的承诺 <span>·</span>99枝红玫瑰</div>
+						<div class="price">
+							<span id="">&yen;</span>568
+						</div>
+					</div>
+					<div class="">
+						<img src="img/sh5.jpg"/>
+						<div class="title">致美丽的你 <span>·</span>红玫瑰11枝，满天星0.3扎，栀子叶0.5扎</div>
+						<div class="price">
+							<span id="">&yen;</span>138
+						</div>
+					</div>
+					<div class="">
+						<img src="img/sh6.jpg"/>
+						<div class="title">温柔如你 <span>·</span>戴安娜粉玫瑰12枝，石竹梅7枝</div>
+						<div class="price">
+							<span id="">&yen;</span>202
+						</div>
+					</div>
+					
+				</div>
+			
+			<div class="bottom">
+				已经到底喽…
+			</div>
+				</div>
+			
+				<div class="bottom-leader">
+		<div >
+			<a href="index.html" class="lj2">
+			<i class="iconfont icon-shouye3"></i>
+			<p>首页</p>
+		    </a>
+		</div>
+		<div >
+			<a href="classify.html" class="lj2">
+			<i class="iconfont icon-fenleisousuo3"></i>
+			<p>分类</p>
+		    </a>
+		</div>
+		<div class="">
+			<a href="shopping.html" class="lj1">
+			<i class="iconfont icon-gouwuchekong2"></i>
+			<p>购物车</p>
+		    </a>
+		</div>
+		<div class="">
+			<a href="my.html" class="lj2">
+			<i class="iconfont icon-tiezi"></i>
+			<p>我的</p>
+		    </a>
+		</div>		
+		
+	</div> 
+		</div>
+	</body>
+</html>
